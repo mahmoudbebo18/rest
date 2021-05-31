@@ -1,0 +1,30 @@
+$(document).ready(function() {
+
+
+    $(".owl-container .owl-carousel").owlCarousel({
+        items: 6,
+        rtl: false,
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        mouseDrag: true,
+        touchDrag: true,
+        autoplayTimeout: 1500,
+        responsive: {
+            320: {
+                items: 1,
+            },
+            425: {
+                items: 2,
+            },
+            768: {
+                items: 3,
+            },
+            992: {
+                items: 4,
+            },
+        },
+    });
+})

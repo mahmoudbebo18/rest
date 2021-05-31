@@ -1,0 +1,162 @@
+body {
+  height: 5000px; }
+
+.navbar {
+  background-color: #ff5a00;
+  position: fixed;
+  z-index: 9999;
+  width: 100%; }
+  .navbar .navbar-brand {
+    color: #fff; }
+  .navbar .navbar-nav .nav-item .dropdown-menu {
+    left: auto;
+    right: 0; }
+  .navbar .navbar-nav .nav-item .nav-link {
+    color: #fff; }
+
+.header-content {
+  height: 100vh;
+  position: relative; }
+  .header-content .blured-img {
+    height: 100%;
+    background-image: url(../imgs/sliderbg.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: blur(5px); }
+  .header-content .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(25, 25, 25, 0.5);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    /*
+    .rank-area {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .pay {
+            padding: 10px 0;
+            img {
+                width: 50px;
+            }
+        }
+        .review {
+            font-size: 18px;
+        }
+        .stars {
+            i {
+                color: $mainColor;
+            }
+        }
+    }*/ }
+    .header-content .content img {
+      width: 130px;
+      border-radius: 5px; }
+    .header-content .content h1 {
+      font-size: 30px;
+      margin-top: 10px;
+      color: #ff5a00; }
+    .header-content .content span {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-top: 10px; }
+    .header-content .content p {
+      font-size: 30px;
+      margin-top: 10px; }
+    .header-content .content .search-area {
+      display: flex;
+      position: relative;
+      width: 100%;
+      padding: 10px;
+      background-color: #333;
+      border-radius: 5px; }
+      .header-content .content .search-area i {
+        position: absolute;
+        color: #929292;
+        top: 30px;
+        transform: rotate(90deg);
+        left: 25px; }
+      .header-content .content .search-area input {
+        flex-basis: 80%;
+        max-width: 100%;
+        padding-left: 40px; }
+      .header-content .content .search-area button {
+        flex-basis: 19%;
+        max-width: 100%;
+        margin-left: 1%;
+        padding: 15px 0; }
+
+/*
+// start rock slide
+.rock-slide {
+    padding: 30px 0;
+    .slide-container {
+        border-top: 10px solid $mainColor;
+        background-color: #fff;
+        padding: 20px 10px;
+        box-shadow: 2px 13px 54px #c5c3c3;
+        .rock {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            .rock-head {
+                h2 {
+                    font-size: 22px;
+                    color: $mainColor
+                }
+            }
+            .offers {
+                button {
+                    background-color: transparent;
+                    border: 1px solid #929292;
+                    padding: 10px 20px;
+                    i {
+                        color: $mainColor;
+                        margin-right: 5px;
+                    }
+                }
+                .fa-facebook,
+                .fa-twitter {
+                    padding: 15px 20px;
+                    color: #fff;
+                    border-radius: 5px;
+                    margin-left: 5px;
+                }
+                .fa-facebook {
+                    background-color: #3b5998
+                }
+                .fa-twitter {
+                    background-color: #1da1f2
+                }
+            }
+            .caption {
+                p {
+                    font-size: 14px;
+                    color: #727272;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+// end rock slider
+
+*/
+.owl-container {
+  padding: 30px 0; }
+  .owl-container h2 {
+    margin: 0 0 24px 0;
+    font-size: 24px; }
+
+/*# sourceMappingURL=style.css.map */
