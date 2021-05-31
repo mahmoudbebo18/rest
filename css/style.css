@@ -59,13 +59,22 @@ body {
             }
         }
     }*/ }
+    @media (max-width: 767px) {
+      .header-content .content {
+        width: 95%; } }
     .header-content .content img {
       width: 130px;
       border-radius: 5px; }
+      @media (max-width: 767px) {
+        .header-content .content img {
+          width: 100px; } }
     .header-content .content h1 {
       font-size: 30px;
       margin-top: 10px;
       color: #ff5a00; }
+      @media (max-width: 767px) {
+        .header-content .content h1 {
+          font-size: 24px; } }
     .header-content .content span {
       font-size: 14px;
       opacity: 0.8;
@@ -73,6 +82,9 @@ body {
     .header-content .content p {
       font-size: 30px;
       margin-top: 10px; }
+      @media (max-width: 767px) {
+        .header-content .content p {
+          font-size: 18px; } }
     .header-content .content .search-area {
       display: flex;
       position: relative;
@@ -80,6 +92,9 @@ body {
       padding: 10px;
       background-color: #333;
       border-radius: 5px; }
+      @media (max-width: 767px) {
+        .header-content .content .search-area {
+          flex-wrap: wrap; } }
       .header-content .content .search-area i {
         position: absolute;
         color: #929292;
@@ -90,11 +105,21 @@ body {
         flex-basis: 80%;
         max-width: 100%;
         padding-left: 40px; }
+        @media (max-width: 767px) {
+          .header-content .content .search-area input {
+            flex-basis: 100%;
+            max-width: 100%;
+            padding: 15px 0 15px 32px; } }
       .header-content .content .search-area button {
-        flex-basis: 19%;
+        flex-basis: 22%;
         max-width: 100%;
         margin-left: 1%;
         padding: 15px 0; }
+        @media (max-width: 767px) {
+          .header-content .content .search-area button {
+            flex-basis: 100%;
+            max-width: 100%;
+            margin: 10px 0 0 0; } }
 
 /*
 // start rock slide
@@ -157,6 +182,60 @@ body {
   padding: 30px 0; }
   .owl-container h2 {
     margin: 0 0 24px 0;
-    font-size: 24px; }
+    font-size: 18px; }
+
+.reviews {
+  padding: 0 0 30px 0; }
+  .reviews .review-head {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e6e6e6;
+    padding: 32px 0 0 0; }
+    .reviews .review-head h5 {
+      font-size: 18px; }
+    .reviews .review-head div {
+      font-size: 18px; }
+      .reviews .review-head div i {
+        font-size: 18px;
+        position: relative;
+        color: #ff5a00; }
+        .reviews .review-head div i span {
+          font-size: 15px; }
+  .reviews .reviews-content {
+    padding: 30px 0; }
+    .reviews .reviews-content span {
+      font-size: 15px;
+      font-weight: bold; }
+    .reviews .reviews-content p {
+      color: #b5b5b5;
+      font-size: 13px; }
+    .reviews .reviews-content .col-lg-3 {
+      border-right: 1px solid #ccc; }
+      @media (max-width: 577px) {
+        .reviews .reviews-content .col-lg-3 {
+          flex-basis: 50%;
+          border: none; } }
+  .reviews .comments .first-client {
+    background-color: #f5f5f5;
+    padding: 15px;
+    margin-bottom: 18px; }
+    .reviews .comments .first-client .client-info {
+      display: flex;
+      justify-content: space-between; }
+      .reviews .comments .first-client .client-info span {
+        color: #727272 !important; }
+    .reviews .comments .first-client .client-comment p {
+      color: #a0a0a0;
+      margin-left: 5px; }
+
+.area {
+  min-height: 300px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .area h6 {
+    font-size: 24px;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */

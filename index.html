@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">LOGO</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i style="color:#fff" class="fa fa-bars"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -27,8 +27,31 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Offers <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">All Restaurants</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            My Account
+
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-shopping-basket mr-2"></i> My Orders
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-user mr-3"></i> Account Info
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-location-arrow mr-3"></i> Saved Addresses
+                            </a>
+
+
+
+
+
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-sign-out mr-3"></i> Sign Out
+                            </a>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -110,6 +133,94 @@
 
     <!-- End Our Best -->
 
+
+    <!-- Our Reviews-->
+
+
+    <section class="reviews">
+
+        <div class="container">
+            <div class="review-head">
+                <h5 class="text-uppercase"> our reviews </h5>
+                <div>
+                    4.5<i class="fa fa-star ">
+
+                    </i>
+                    <span>(Total: 14500)</span>
+                </div>
+            </div>
+            <div class="reviews-content">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <img src="imgs/1.png" width="30px">
+                        <span>Excellent</span>
+                        <p> Fresh and On Time </p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <img src="imgs/good.png" width="30px">
+                        <span>Very Good</span>
+                        <p> Fresh and On Time </p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <img src="imgs/good.png" width="30px">
+                        <span>Good</span>
+                        <p> Fresh and On Time </p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <img src="imgs/good.png" width="30px">
+                        <span>Good</span>
+                        <p> Fresh and On Time </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Review Comments-->
+            <div class="comments">
+                <!-- First Client-->
+                <div class="first-client">
+                    <div class="client-info">
+                        <div>
+                            <img src="imgs/good.png" width="30px">
+                            <span>Mohamed Ahmed</span>
+                        </div>
+                        <span> 21/5/2021 </span>
+                    </div>
+                    <div class="client-comment">
+                        <p> جيد جدا في التوصيل وجودة الطعام </p>
+                    </div>
+                </div>
+                <div class="first-client">
+                    <div class="client-info">
+                        <div>
+                            <img src="imgs/poor.png" width="30px">
+                            <span>Mohamed Ahmed</span>
+                        </div>
+                        <span> 21/5/2021 </span>
+                    </div>
+                    <div class="client-comment">
+                        <p> جيد جدا في التوصيل وجودة الطعام </p>
+                    </div>
+                </div>
+                <div class="first-client">
+                    <div class="client-info">
+                        <div>
+                            <img src="imgs/satis.png" width="30px">
+                            <span>Mohamed Ahmed</span>
+                        </div>
+                        <span> 21/5/2021 </span>
+                    </div>
+                    <div class="client-comment">
+                        <p> جيد جدا في التوصيل وجودة الطعام </p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End Comments-->
+    </section>
+    <!-- End Reviews-->
+    <div class="area">
+        <h6> Some Space </h6>
+
+    </div>
 
 
     <script src="js/jquery-3.2.1.min.js"></script>
