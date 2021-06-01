@@ -28,3 +28,33 @@ $(document).ready(function() {
         },
     });
 })
+
+function increase() {
+    var a = 1;
+    var textBox = document.getElementById("text");
+    textBox.value++;
+
+}
+
+function decrease() {
+    var textBox = document.getElementById("text");
+    textBox.value--;
+}
+
+$(document).ready(function() {
+    var $textbox = $("#incdec input");
+
+    $("#up").click(function() {
+        var value = parseInt($textbox.val(), 10);
+
+        $textbox.val(value + 1);
+    });
+
+    $("#down").click(function() {
+        var value = parseInt($textbox.val(), 10);
+
+        if (value > 0) {
+            $textbox.val(value - 1);
+        }
+    });
+});
