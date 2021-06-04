@@ -2,10 +2,10 @@
   font-family: 'Open Sans';
   src: url(../fonts/OpenSans-Regular.ttf); }
 body {
-  background-color: rgba(255, 235, 198, 0.7); }
+  background-color: #fff; }
 
 .navbar {
-  background-color: #003844;
+  background-color: #d7aa2e;
   position: fixed;
   z-index: 9999;
   width: 100%; }
@@ -74,7 +74,7 @@ body {
     .header-content .content h1 {
       font-size: 30px;
       margin-top: 10px;
-      color: #003844; }
+      color: #d7aa2e; }
       @media (max-width: 767px) {
         .header-content .content h1 {
           font-size: 24px; } }
@@ -201,7 +201,7 @@ body {
       .reviews .review-head div i {
         font-size: 18px;
         position: relative;
-        color: #003844; }
+        color: #d7aa2e; }
         .reviews .review-head div i span {
           font-size: 15px; }
   .reviews .reviews-content {
@@ -301,9 +301,8 @@ body {
 .our-meals {
   padding-top: 80px; }
   .our-meals .row .col-md {
-    background-color: #fff;
+    background-color: rgba(215, 170, 46, 0.6);
     padding: 15px;
-    border-radius: 5px;
     transition: .3s;
     cursor: pointer;
     margin-bottom: 18px; }
@@ -395,5 +394,73 @@ body {
       align-items: center;
       justify-content: space-evenly;
       flex-direction: row-reverse; }
+
+@media (max-width: 425px) {
+  .area-form h3 {
+    font-size: 20px; } }
+.area-form .submiting input {
+  margin: 0 !important; }
+@media (max-width: 425px) {
+  .area-form .area-container {
+    flex-wrap: wrap; } }
+.area-form .area-container .block-input {
+  flex-basis: 49%;
+  margin-right: 1%; }
+  @media (max-width: 425px) {
+    .area-form .area-container .block-input {
+      flex-basis: 100%;
+      margin-left: 0; } }
+  .area-form .area-container .block-input label {
+    color: #828585;
+    font-size: 13px; }
+.area-form .area-container .area-input {
+  flex-basis: 49%;
+  margin-left: 1%; }
+  @media (max-width: 425px) {
+    .area-form .area-container .area-input {
+      flex-basis: 100%;
+      margin-left: 0; } }
+  .area-form .area-container .area-input label {
+    color: #828585;
+    font-size: 13px; }
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: none;
+  box-shadow: none !important; }
+
+.add-topping h4 {
+  margin: 0 0px 20px 0;
+  font-size: 12px !important; }
+.add-topping .check-me {
+  justify-content: space-between;
+  margin: 0 0 10px 0; }
+  .add-topping .check-me .check-box p {
+    margin: 0 !important; }
+  .add-topping .check-me .check-box input[type=checkbox] {
+    width: 15px;
+    height: 20px;
+    margin-right: 5px; }
+  .add-topping .check-me .extra-price span {
+    font-size: 12px;
+    color: #828585; }
+
+.area-form {
+  display: none; }
+
+.modal-body .area-form {
+  position: relative;
+  height: 300px !important; }
+  .modal-body .area-form .blured-img {
+    display: none; }
+  .modal-body .area-form .form-holder {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 60%; }
+    .modal-body .area-form .form-holder h3 {
+      font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */

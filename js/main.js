@@ -57,4 +57,8 @@ $(document).ready(function() {
             $textbox.val(value - 1);
         }
     });
+
+    $('.add-to-order').click(function() {
+        $('.custom-your-meal').fadeOut().next().fadeIn()
+    })
 });
