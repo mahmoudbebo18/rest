@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rest</title>
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -73,68 +74,55 @@
             </div>
         </nav>
     </header>
-
-    <!-- End header --->
-    <!-- Start Acc -info -->
-    <section class="acc-info ">
-        <div class="container-fluid">
-            <h4 class="text-uppercase">my account</h4>
-            <div class="user-holder d-flex">
-                <!-- tabs-->
-                <aside>
-                    <ul class="list-unstyled">
-
-                        <li>
-                            <a href="account-info.html" class="text-capitalize "> account info </a>
-                        </li>
-                        <li>
-                            <a href="saved-adresses.html" class="text-capitalize "> saved addresses </a>
-                        </li>
-                        <li>
-                            <a href="my-orders.html" class="text-capitalize active">my orders </a>
-                        </li>
-                    </ul>
-                </aside>
-                <article>
-                    <div class="my-orders">
-                        <!-- First order -->
-                        <div class="first-order d-flex">
-                            <img src="imgs/burger.jpeg" width="60px">
-                            <div class="order-info">
-                                <h6 class="text-capitalize"> order name</h6>
-                                <span class="text-capitalize">today 15:02</span>
-                                <p class="text-capitalize"> order id:1255420 <span class="success">Successful</span></p>
-                            </div>
-                        </div>
-                        <!-- second order -->
-                        <div class="first-order d-flex">
-                            <img src="imgs/burger.jpeg" width="60px">
-                            <div class="order-info">
-                                <h6 class="text-capitalize"> order name</h6>
-                                <span class="text-capitalize">today 15:02</span>
-                                <p class="text-capitalize"> order id:1255420 <span class="success">Successful</span></p>
-                            </div>
-                        </div>
-                        <!-- third order -->
-                        <div class="first-order d-flex">
-                            <img src="imgs/burger.jpeg" width="60px">
-                            <div class="order-info">
-                                <h6 class="text-capitalize"> order name</h6>
-                                <span class="text-capitalize">today 15:02</span>
-                                <p class="text-capitalize"> order id:1255420 <span class="canceled">Canceleed</span></p>
-                            </div>
-                        </div>
+    <!-- stepper-->
+    <section class="stepper">
+        <div class="container">
+            <div class="stepper-content">
+                <i class="far fa-smile"></i>
+                <h6 class="text-capitalize">thank you !</h6>
+                <p>your order is placed successfully, please go to order page to manage status </p>
+                <div class="clone d-flex">
+                    <span class="text-capitalize"> order code : 7MA12058EkJ</span>
+                    <i class="fa fa-clone"></i>
+                </div>
+                <!-- My Order Date-->
+                <div class="order-date">
+                    <div class="step-date d-flex">
+                        <h4 class="text-capitalize">estimate time</h4>
+                        <span class="text-capitalize">monday 20, 5:40pm</span>
                     </div>
-                </article>
+                </div>
+                <!-- Steps of my order-->
+                <div class="my-steps">
+                    <ul class="list-unstyled">
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                    <!-- order state-->
+                    <div class="order-state">
+                        <p class="active">Confirming Your Order</p>
+                        <p> Your Order is Processing</p>
+                        <p>Your Order Is Finished </p>
+                        <p> Your Order Is Delivered</p>
+                    </div>
+                    <div class="print d-flex">
+                        <a href="#" class="btn  text-capitalize">view recepit</a>
+                        <i class="fa fa-download"></i>
+                    </div>
+                </div>
             </div>
         </div>
+
     </section>
-    <!-- End Account info -->
+
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+
 
 </body>
 

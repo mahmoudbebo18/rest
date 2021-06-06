@@ -589,10 +589,6 @@ body {
     }
 }
 
-.area-form {
-    display: none;
-}
-
 .modal-body {
     .area-form {
         position: relative;
@@ -853,6 +849,298 @@ body {
                     color: crimson
                 }
             }
+        }
+    }
+}
+
+// check out 
+.payment {
+    text-align: center;
+    padding-top: 100px !important;
+    .container-fluid {
+        background-color: #fff;
+        color: $paragraph;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    h4 {
+        border: none;
+        padding: 0
+    }
+    p {
+        margin-bottom: 32px;
+        font-size: 18px;
+    }
+    .pay-manner {
+        @media(max-width: 991px) {
+            flex-direction: row !important;
+        }
+    }
+    .user-holder {
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        border: 1px solid #eee;
+        margin-bottom: 14px;
+        box-shadow: 0 0 5px 1px #eee;
+        background-color: #fff;
+        padding: 15px;
+        .pay-method {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            color: $heading;
+            flex-direction: column;
+            flex-basis: 15%;
+            padding: 10px 0;
+            margin-right: 15px;
+            transition: .3s;
+            text-decoration: none;
+            @media(max-width: 425px) {
+                flex-basis: 30%;
+            }
+            i {
+                font-size: 32px;
+            }
+            span {
+                font-weight: bold;
+            }
+        }
+        .pay-method.active {
+            background-color: crimson;
+            color: #fff
+        }
+    }
+}
+
+// .order-info
+.order-holder {
+    justify-content: flex-start !important;
+    padding: 20px !important;
+    flex-direction: column;
+    .order-items {
+        text-align: left;
+        box-shadow: 0 0 5px 1px #eee;
+        background-color: #fff;
+        padding: 15px;
+        width: 100%;
+        margin-bottom: 16px;
+        @media(max-width: 425px) {
+            padding: 15px 10px !important
+        }
+        h6 {
+            font-weight: bold;
+            margin-bottom: 16px;
+            color: #000;
+            font-size: 18px;
+            @media(max-width: 425px) {
+                font-size: 15px;
+            }
+        }
+        .order-name {
+            justify-content: space-between;
+            a {
+                color: $paragraph;
+                font-size: 16px;
+                color: crimson;
+                @media(max-width: 425px) {
+                    font-size: 13px;
+                }
+            }
+            span {
+                @media(max-width: 425px) {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    .delivery-info {
+        h6 {
+            @media(max-width: 425px) {
+                font-size: 15px;
+            }
+        }
+        .order-name {
+            p {
+                margin: 0;
+                @media(max-width: 425px) {
+                    font-size: 13px;
+                }
+                i {
+                    margin-right: 8px;
+                    font-size: 25px;
+                    @media(max-width: 425px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//stepper
+.stepper {
+    padding-top: 100px;
+    text-align: center;
+    .stepper-content {
+        width: 80%;
+        margin: 0 auto 15px;
+        padding: 20px 0;
+        box-shadow: 0 0 5px 1px #eee;
+        background-color: #fff;
+        padding: 15px;
+        .fa-smile {
+            font-size: 60px;
+            color: crimson;
+            margin-bottom: 10px;
+            @media(max-width: 375px) {
+                font-size: 45px;
+            }
+        }
+        h6 {
+            font-weight: bold;
+            font-size: 24px;
+            @media(max-width: 375px) {
+                font-size: 20px;
+            }
+        }
+        p {
+            font-size: 15px;
+            margin-bottom: 24px;
+            color: $paragraph;
+            @media(max-width: 500px) {
+                font-size: 13px;
+                margin-bottom: 32px;
+            }
+        }
+        .clone {
+            justify-content: center;
+            align-items: center;
+            span {
+                color: #fff;
+                background-color: crimson;
+                padding: 10px;
+                border-radius: 10px;
+                margin-right: 10px;
+                @media(max-width: 500px) {
+                    font-size: 11px;
+                }
+            }
+            i {
+                color: crimson
+            }
+        }
+        .order-date {
+            padding: 20px 0;
+            margin: 10px 0;
+            .step-date {
+                justify-content: space-between;
+                h4 {
+                    font-size: 15px;
+                    font-weight: bold;
+                    @media(max-width: 375px) {
+                        font-size: 13px;
+                    }
+                }
+                span {
+                    color: $paragraph;
+                    font-size: 13px;
+                    @media(max-width: 375px) {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+        .my-steps {
+            ul {
+                position: relative;
+                width: 100%;
+                justify-content: space-evenly;
+                display: flex;
+                li {
+                    width: 35px;
+                    height: 35px;
+                    background-color: $paragraph;
+                    border: 3px solid $heading;
+                    color: #fff;
+                    position: relative;
+                    line-height: 30px;
+                    border-radius: 50%;
+                    z-index: 3;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 40%;
+                        right: -120px;
+                        height: 3px;
+                        background-color: #424646;
+                        width: 120px;
+                        text-align: center;
+                        z-index: 1;
+                        @media (min-width: 1040px) {
+                            right: -150px;
+                            width: 150px;
+                        }
+                        @media (min-width: 768px) and (max-width: 991px) {
+                            right: -80px;
+                            width: 80px;
+                        }
+                        @media(max-width: 425px) {
+                            right: -32px;
+                            width: 32px;
+                        }
+                        @media (min-width: 426px) and (max-width: 767px) {
+                            right: -55px;
+                            width: 55px;
+                        }
+                    }
+                }
+                 :nth-child(4) {
+                    &::after {
+                        display: none;
+                    }
+                }
+                li.active {
+                    background-color: crimson;
+                    border-color: crimson;
+                    &::after {
+                        background-color: crimson;
+                    }
+                }
+            }
+            .order-state {
+                p {
+                    display: none;
+                }
+                p.active {
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
+            .print {
+                justify-content: center;
+                align-items: center;
+                i {
+                    font: 24px;
+                    margin-left: 10px;
+                    color: crimson
+                }
+                a {
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    box-shadow: none;
+                    border: 1px solid crimson;
+                    color: crimson;
+                }
+            }
+        }
+    }
+}
+
+.my-info {
+    .order-name {
+        margin-bottom: 20px;
+        p {
+            font-size: 15px;
         }
     }
 }

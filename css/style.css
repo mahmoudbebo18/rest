@@ -447,9 +447,6 @@ body {
     font-size: 12px;
     color: #828585; }
 
-.area-form {
-  display: none; }
-
 .modal-body .area-form {
   position: relative;
   height: 300px !important; }
@@ -654,5 +651,235 @@ body {
         color: green; }
       .my-orders .first-order .order-info p span.canceled {
         color: crimson; }
+
+.payment {
+  text-align: center;
+  padding-top: 100px !important; }
+  .payment .container-fluid {
+    background-color: #fff;
+    color: #828585;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .payment h4 {
+    border: none;
+    padding: 0; }
+  .payment p {
+    margin-bottom: 32px;
+    font-size: 18px; }
+  @media (max-width: 991px) {
+    .payment .pay-manner {
+      flex-direction: row !important; } }
+  .payment .user-holder {
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border: 1px solid #eee;
+    margin-bottom: 14px;
+    box-shadow: 0 0 5px 1px #eee;
+    background-color: #fff;
+    padding: 15px; }
+    .payment .user-holder .pay-method {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      color: #2e3333;
+      flex-direction: column;
+      flex-basis: 15%;
+      padding: 10px 0;
+      margin-right: 15px;
+      transition: .3s;
+      text-decoration: none; }
+      @media (max-width: 425px) {
+        .payment .user-holder .pay-method {
+          flex-basis: 30%; } }
+      .payment .user-holder .pay-method i {
+        font-size: 32px; }
+      .payment .user-holder .pay-method span {
+        font-weight: bold; }
+    .payment .user-holder .pay-method.active {
+      background-color: crimson;
+      color: #fff; }
+
+.order-holder {
+  justify-content: flex-start !important;
+  padding: 20px !important;
+  flex-direction: column; }
+  .order-holder .order-items {
+    text-align: left;
+    box-shadow: 0 0 5px 1px #eee;
+    background-color: #fff;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 16px; }
+    @media (max-width: 425px) {
+      .order-holder .order-items {
+        padding: 15px 10px !important; } }
+    .order-holder .order-items h6 {
+      font-weight: bold;
+      margin-bottom: 16px;
+      color: #000;
+      font-size: 18px; }
+      @media (max-width: 425px) {
+        .order-holder .order-items h6 {
+          font-size: 15px; } }
+    .order-holder .order-items .order-name {
+      justify-content: space-between; }
+      .order-holder .order-items .order-name a {
+        color: #828585;
+        font-size: 16px;
+        color: crimson; }
+        @media (max-width: 425px) {
+          .order-holder .order-items .order-name a {
+            font-size: 13px; } }
+      @media (max-width: 425px) {
+        .order-holder .order-items .order-name span {
+          font-size: 11px; } }
+  @media (max-width: 425px) {
+    .order-holder .delivery-info h6 {
+      font-size: 15px; } }
+  .order-holder .delivery-info .order-name p {
+    margin: 0; }
+    @media (max-width: 425px) {
+      .order-holder .delivery-info .order-name p {
+        font-size: 13px; } }
+    .order-holder .delivery-info .order-name p i {
+      margin-right: 8px;
+      font-size: 25px; }
+      @media (max-width: 425px) {
+        .order-holder .delivery-info .order-name p i {
+          font-size: 18px; } }
+
+.stepper {
+  padding-top: 100px;
+  text-align: center; }
+  .stepper .stepper-content {
+    width: 80%;
+    margin: 0 auto 15px;
+    padding: 20px 0;
+    box-shadow: 0 0 5px 1px #eee;
+    background-color: #fff;
+    padding: 15px; }
+    .stepper .stepper-content .fa-smile {
+      font-size: 60px;
+      color: crimson;
+      margin-bottom: 10px; }
+      @media (max-width: 375px) {
+        .stepper .stepper-content .fa-smile {
+          font-size: 45px; } }
+    .stepper .stepper-content h6 {
+      font-weight: bold;
+      font-size: 24px; }
+      @media (max-width: 375px) {
+        .stepper .stepper-content h6 {
+          font-size: 20px; } }
+    .stepper .stepper-content p {
+      font-size: 15px;
+      margin-bottom: 24px;
+      color: #828585; }
+      @media (max-width: 500px) {
+        .stepper .stepper-content p {
+          font-size: 13px;
+          margin-bottom: 32px; } }
+    .stepper .stepper-content .clone {
+      justify-content: center;
+      align-items: center; }
+      .stepper .stepper-content .clone span {
+        color: #fff;
+        background-color: crimson;
+        padding: 10px;
+        border-radius: 10px;
+        margin-right: 10px; }
+        @media (max-width: 500px) {
+          .stepper .stepper-content .clone span {
+            font-size: 11px; } }
+      .stepper .stepper-content .clone i {
+        color: crimson; }
+    .stepper .stepper-content .order-date {
+      padding: 20px 0;
+      margin: 10px 0; }
+      .stepper .stepper-content .order-date .step-date {
+        justify-content: space-between; }
+        .stepper .stepper-content .order-date .step-date h4 {
+          font-size: 15px;
+          font-weight: bold; }
+          @media (max-width: 375px) {
+            .stepper .stepper-content .order-date .step-date h4 {
+              font-size: 13px; } }
+        .stepper .stepper-content .order-date .step-date span {
+          color: #828585;
+          font-size: 13px; }
+          @media (max-width: 375px) {
+            .stepper .stepper-content .order-date .step-date span {
+              font-size: 11px; } }
+    .stepper .stepper-content .my-steps ul {
+      position: relative;
+      width: 100%;
+      justify-content: space-evenly;
+      display: flex; }
+      .stepper .stepper-content .my-steps ul li {
+        width: 35px;
+        height: 35px;
+        background-color: #828585;
+        border: 3px solid #2e3333;
+        color: #fff;
+        position: relative;
+        line-height: 30px;
+        border-radius: 50%;
+        z-index: 3; }
+        .stepper .stepper-content .my-steps ul li::after {
+          content: '';
+          position: absolute;
+          top: 40%;
+          right: -120px;
+          height: 3px;
+          background-color: #424646;
+          width: 120px;
+          text-align: center;
+          z-index: 1; }
+          @media (min-width: 1040px) {
+            .stepper .stepper-content .my-steps ul li::after {
+              right: -150px;
+              width: 150px; } }
+          @media (min-width: 768px) and (max-width: 991px) {
+            .stepper .stepper-content .my-steps ul li::after {
+              right: -80px;
+              width: 80px; } }
+          @media (max-width: 425px) {
+            .stepper .stepper-content .my-steps ul li::after {
+              right: -32px;
+              width: 32px; } }
+          @media (min-width: 426px) and (max-width: 767px) {
+            .stepper .stepper-content .my-steps ul li::after {
+              right: -55px;
+              width: 55px; } }
+      .stepper .stepper-content .my-steps ul :nth-child(4)::after {
+        display: none; }
+      .stepper .stepper-content .my-steps ul li.active {
+        background-color: crimson;
+        border-color: crimson; }
+        .stepper .stepper-content .my-steps ul li.active::after {
+          background-color: crimson; }
+    .stepper .stepper-content .my-steps .order-state p {
+      display: none; }
+    .stepper .stepper-content .my-steps .order-state p.active {
+      display: block;
+      margin-bottom: 20px; }
+    .stepper .stepper-content .my-steps .print {
+      justify-content: center;
+      align-items: center; }
+      .stepper .stepper-content .my-steps .print i {
+        font: 24px;
+        margin-left: 10px;
+        color: crimson; }
+      .stepper .stepper-content .my-steps .print a {
+        text-decoration: none;
+        padding: 10px 20px;
+        box-shadow: none;
+        border: 1px solid crimson;
+        color: crimson; }
+
+.my-info .order-name {
+  margin-bottom: 20px; }
+  .my-info .order-name p {
+    font-size: 15px; }
 
 /*# sourceMappingURL=style.css.map */

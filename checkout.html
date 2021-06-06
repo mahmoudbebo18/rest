@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rest</title>
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -76,64 +77,56 @@
 
     <!-- End header --->
     <!-- Start Acc -info -->
-    <section class="acc-info ">
+    <section class="acc-info payment ">
         <div class="container-fluid">
-            <h4 class="text-uppercase">my account</h4>
-            <div class="user-holder d-flex">
-                <!-- tabs-->
-                <aside>
-                    <ul class="list-unstyled">
+            <h4 class="text-uppercase">payment method</h4>
+            <p>choose your preferred payment</p>
+            <div class="user-holder pay-manner  d-flex">
 
-                        <li>
-                            <a href="account-info.html" class="text-capitalize "> account info </a>
-                        </li>
-                        <li>
-                            <a href="saved-adresses.html" class="text-capitalize "> saved addresses </a>
-                        </li>
-                        <li>
-                            <a href="my-orders.html" class="text-capitalize active">my orders </a>
-                        </li>
-                    </ul>
-                </aside>
-                <article>
-                    <div class="my-orders">
-                        <!-- First order -->
-                        <div class="first-order d-flex">
-                            <img src="imgs/burger.jpeg" width="60px">
-                            <div class="order-info">
-                                <h6 class="text-capitalize"> order name</h6>
-                                <span class="text-capitalize">today 15:02</span>
-                                <p class="text-capitalize"> order id:1255420 <span class="success">Successful</span></p>
-                            </div>
-                        </div>
-                        <!-- second order -->
-                        <div class="first-order d-flex">
-                            <img src="imgs/burger.jpeg" width="60px">
-                            <div class="order-info">
-                                <h6 class="text-capitalize"> order name</h6>
-                                <span class="text-capitalize">today 15:02</span>
-                                <p class="text-capitalize"> order id:1255420 <span class="success">Successful</span></p>
-                            </div>
-                        </div>
-                        <!-- third order -->
-                        <div class="first-order d-flex">
-                            <img src="imgs/burger.jpeg" width="60px">
-                            <div class="order-info">
-                                <h6 class="text-capitalize"> order name</h6>
-                                <span class="text-capitalize">today 15:02</span>
-                                <p class="text-capitalize"> order id:1255420 <span class="canceled">Canceleed</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
+                <a href="#" class="pay-method d-flex active">
+                    <i class="fa fa-money-bill-wave"></i>
+                    <span class="text-capitalize"> cash </span>
+                </a>
+                <a href="#" class="pay-method d-flex">
+                    <i class="fas fa-ticket-alt"></i>
+                    <span class="text-capitalize"> kent </span>
+                </a>
+                <a href="#" class="pay-method d-flex">
+                    <i class="fab fa-cc-visa"></i>
+                    <span class="text-capitalize"> visa </span>
+                </a>
+
             </div>
+
+            <div class="user-holder d-flex  order-holder">
+                <!-- order info -->
+                <div class="order-items">
+                    <h6 class="text-capitalize"> order items </h6>
+                    <div class="order-name d-flex">
+                        <a href="#" class="text-uppercase">1 * kong's smased slider </a>
+                        <span class="text-uppercase">1.22 KWD</span>
+                    </div>
+                </div>
+                <!-- delivery info -->
+                <div class="order-items delivery-info">
+                    <h6 class="text-capitalize"> delivery info </h6>
+                    <div class="order-name d-flex">
+                        <p href="#" class="text-uppercase"> <i class="far fa-clock" style="color: crimson;"></i>50 Minutes </p>
+                        <a href="#"><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
+
+
     <!-- End Account info -->
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>
