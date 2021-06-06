@@ -463,4 +463,196 @@ body {
     .modal-body .area-form .form-holder h3 {
       font-size: 20px; }
 
+.acc-info {
+  padding-top: 120px; }
+  .acc-info h4 {
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    padding: 0 0 15px 0;
+    margin-left: 10px; }
+  @media (max-width: 991px) {
+    .acc-info .user-holder {
+      flex-direction: column; } }
+  .acc-info .user-holder aside {
+    flex-basis: 20%;
+    max-width: 100%;
+    border-right: 1px solid #ccc; }
+    @media (max-width: 991px) {
+      .acc-info .user-holder aside {
+        border-right: none; } }
+    .acc-info .user-holder aside ul li {
+      transition: .3s; }
+      .acc-info .user-holder aside ul li a {
+        text-decoration: none;
+        color: #2e3333;
+        transition: .3s;
+        padding: 15px 0 15px 10px;
+        width: 100%;
+        display: inline-block; }
+        .acc-info .user-holder aside ul li a:hover {
+          color: orange;
+          margin: 0 0 0 5px; }
+      .acc-info .user-holder aside ul li a.active {
+        border-left: 1px solid orange;
+        color: orange; }
+  .acc-info .user-holder article {
+    flex-basis: 80%;
+    max-width: 100%;
+    padding: 10px 0 0 30px; }
+    @media (max-width: 991px) {
+      .acc-info .user-holder article {
+        padding-left: 0; } }
+    .acc-info .user-holder article .inputs-holder {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 32px; }
+      @media (max-width: 991px) {
+        .acc-info .user-holder article .inputs-holder {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-bottom: 15px; } }
+      .acc-info .user-holder article .inputs-holder label {
+        flex-basis: 15%;
+        font-weight: bold;
+        margin-top: 5px;
+        font-size: 13px;
+        color: #b7b7b7; }
+      .acc-info .user-holder article .inputs-holder input {
+        flex-basis: 50%; }
+      .acc-info .user-holder article .inputs-holder .change-email {
+        flex-basis: 35%;
+        justify-content: flex-end; }
+        .acc-info .user-holder article .inputs-holder .change-email a {
+          color: #2e3333;
+          text-decoration: none;
+          margin-top: 5px;
+          display: inline-block;
+          margin-right: 25px;
+          color: #2c7a0d;
+          font-size: 14px; }
+      .acc-info .user-holder article .inputs-holder .gender {
+        flex-basis: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+        border-radius: 5px; }
+        @media (max-width: 991px) {
+          .acc-info .user-holder article .inputs-holder .gender {
+            width: 100%; } }
+        .acc-info .user-holder article .inputs-holder .gender .male,
+        .acc-info .user-holder article .inputs-holder .gender .female {
+          flex-basis: 50%;
+          max-width: 50%;
+          text-decoration: none;
+          text-align: center;
+          display: inline-block;
+          padding: 10px 0;
+          color: #828585; }
+        .acc-info .user-holder article .inputs-holder .gender .male {
+          border-right: 1px solid #ccc; }
+        .acc-info .user-holder article .inputs-holder .gender a.active {
+          color: #fff;
+          background-color: orange;
+          border: 1px solid orange; }
+    @media (max-width: 991px) {
+      .acc-info .user-holder article .sub {
+        flex-direction: column; } }
+    .acc-info .user-holder article .sub .sub-check {
+      flex-basis: 50%;
+      max-width: 100%;
+      color: #828585; }
+      .acc-info .user-holder article .sub .sub-check input {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        margin-top: 5px; }
+    .acc-info .user-holder article .sub button {
+      flex-basis: 15%;
+      max-width: 100%;
+      padding: 0;
+      display: inline-block;
+      margin: 0;
+      height: 45px; }
+      @media (max-width: 991px) {
+        .acc-info .user-holder article .sub button {
+          padding: 10px;
+          margin-bottom: 20px; } }
+    .acc-info .user-holder article .user-gender {
+      padding-top: 2px; }
+
+.saved-add {
+  position: relative; }
+  .saved-add .first-add {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0; }
+    .saved-add .first-add .address-holder h6 {
+      flex-basis: 30%;
+      max-width: 100%; }
+    .saved-add .first-add .address-holder p {
+      flex-basis: 70%;
+      max-width: 100%; }
+    .saved-add .first-add .update-add {
+      position: absolute;
+      bottom: 20px;
+      right: 20px; }
+      .saved-add .first-add .update-add a {
+        text-decoration: none;
+        padding: 5px 10px; }
+      .saved-add .first-add .update-add :nth-child(1) {
+        color: #828585;
+        margin-left: 5px;
+        border-right: 1px solid #ccc; }
+      .saved-add .first-add .update-add :nth-child(2) {
+        color: green;
+        margin-left: 10px; }
+  .saved-add .add-new {
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .saved-add .add-new a {
+      color: #2e3333;
+      font-size: 13px; }
+      .saved-add .add-new a i {
+        color: #fff;
+        background-color: #252525;
+        /* padding: 5px; */
+        border-radius: 50%;
+        font-size: 13px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        margin-right: 5px; }
+
+.my-orders {
+  border: 1px solid #ccc; }
+  .my-orders .first-order {
+    padding: 15px;
+    border-bottom: 1px solid #ccc; }
+    .my-orders .first-order img {
+      width: 70px !important;
+      object-fit: cover;
+      height: 70px !important;
+      flex-basis: 10%;
+      max-width: 100%;
+      margin-right: 10px; }
+    .my-orders .first-order .order-info h6 {
+      font-weight: bold;
+      margin: 0; }
+    .my-orders .first-order .order-info span {
+      color: #828585;
+      font-size: 14px;
+      margin-bottom: 8px;
+      display: inline-block; }
+    .my-orders .first-order .order-info p {
+      color: #828585;
+      margin-bottom: 0; }
+      .my-orders .first-order .order-info p span.success {
+        color: green; }
+      .my-orders .first-order .order-info p span.canceled {
+        color: crimson; }
+
 /*# sourceMappingURL=style.css.map */
